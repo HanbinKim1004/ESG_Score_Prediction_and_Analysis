@@ -13,7 +13,7 @@ data:
 
 ![image](https://user-images.githubusercontent.com/77422840/163293893-9b4effce-1e45-4ac6-9548-3ef11cf730db.png)
 
-
+# 아이디어 소개
 ![image](https://user-images.githubusercontent.com/77422840/163296786-8ed17110-6b84-453f-8c7b-6289a69d0130.png)
 
 문제점: 
@@ -26,6 +26,7 @@ data:
 
 ![image](https://user-images.githubusercontent.com/77422840/163296923-7e9ff8de-0174-4bd8-9b3b-4070fa394fc5.png)
 
+# 데이터 전처리
 데이터 전처리1.  Label Encoding (Ordinal Encoding)
 - 각 문자열 라벨을 단순 정수화 (A -> 0, B -> 1, C -> 2…)
 - Decision Tree 모델에 적합하며, 특히 GBDT 모델에서는 기본적인 방법
@@ -40,6 +41,8 @@ data:
 - SMOTE : 낮은 비율로 존재하는 클래스의 데이터를 K-NN 알고리즘(최근접)을 활용하여 새롭게 생성하는 방법. 
 - 단순 무작위 추출은 overfitting 문제가 발생할 수도 있으나, SMOTE는 알고리즘에 기반해서 데이터를 생성하므로 과적합 발생 가능성이 상대적으로 작음
 
+# 모델 설명
+## Unsupervised Learning
 ![image](https://user-images.githubusercontent.com/77422840/163297245-0c83a988-76ac-488b-ba91-cb8385e63758.png)
 
 모델1 - Unsupervised Learning – K-Prototype Model (군집화 및 해석 목적)
@@ -49,6 +52,8 @@ data:
 
 ![image](https://user-images.githubusercontent.com/77422840/163297419-b0e893d7-da9a-4836-b26f-20eb86fa269f.png)
 
+
+## Supervised Learning
 모델2 - Supervised Learning - Decision Tree, Random Forest, ADA Boost, Light GBM, Gradient Boosting, CAT Boosting, MLP (총 7개 Model)
  - 비지도학습 기반의 클러스터링 모델은 기업이 속한 군집의 속성을 바탕으로 ESG 등급을 확률로서 예측함
 - 지도학습에 기반한 Classification의 성능의 테스트, Y factor에 가장 큰 영향을 주는 X feature의 탐색을 위함
