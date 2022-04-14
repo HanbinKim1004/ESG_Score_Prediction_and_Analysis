@@ -5,7 +5,7 @@ file definition
 code:
 1. saramin_crawling = 사람인 크롤링 데이터 
 2. clusteringrepeat = oversampling clustering / cluster 속 clusterting
-3. 0000 = 
+3. Download_DartData_and_DataPivotting = OpenDart API에서 2020년도 기준 연결 재무제표 데이터 크롤링 (corpCode -> rceptNo -> dcm_no -> Data pivotting)
 4. 0000 = 
 
 data:
