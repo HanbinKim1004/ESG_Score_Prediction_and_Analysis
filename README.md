@@ -7,10 +7,23 @@ code:
 2. clusteringrepeat = oversampling clustering / cluster 속 clusterting
 3. Download_DartData_and_DataPivotting = OpenDart API에서 2020년도 기준 연결 재무제표 데이터 크롤링 (corpCode -> rceptNo -> dcm_no -> Data pivotting)
 4. elbow method 활용한 k-prototype clustering = Elbow method를 활용하여 얻은 최적의 군집 수로 클러스터링, 데이터 전처리 ~ clustering 후 EDA
+5. Supervised_Decision_Tree.ipynb = 의사결정 나무 코드
+6. Oversampling.ipynb = 오버샘플링 코드
+7. Oversampling_final_test_material.ipynb = 최종 모델 대입용 오버샘플링 코드 
+8. (initial)Supervised_Algorithm.ipynb = 지도학습 모델들 (ex. Random Forest 등 실행 코드)
+9. (Final)Supervised_Algorithm.ipynb = 최종 모델 대입용 지도학습 모델들 (ex. Random Forest 등 실행 코드)
 
 data:
 1. 복지 (1).csv = 사람인 크롤링 데이터
 2. esg_에너지, 온실.csv = ESG 포털의 ESG데이터와, 국가온실가스종합관리시스템의 온실가스 사용량관련 csv 데이터를 하나로 합친 csv
+3. 6th_merged_data.csv
+4. 전처리완료_merged_6.csv
+5. 모델대입용ESGNull기업데이터.csv
+6. 모델학습용ESG_NonNull기업데이터
+7. (최종)ADASYN_ESG예측데이터.csv
+
+
+
 
 ![image](https://user-images.githubusercontent.com/77422840/163293893-9b4effce-1e45-4ac6-9548-3ef11cf730db.png)
 
