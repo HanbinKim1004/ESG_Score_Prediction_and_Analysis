@@ -6,11 +6,11 @@ code:
 1. saramin_crawling = 사람인 크롤링 데이터 
 2. clusteringrepeat = oversampling clustering / cluster 속 clusterting
 3. Download_DartData_and_DataPivotting = OpenDart API에서 2020년도 기준 연결 재무제표 데이터 크롤링 (corpCode -> rceptNo -> dcm_no -> Data pivotting)
-4. 0000 = 
+4. elbow method 활용한 k-prototype clustering = Elbow method를 활용하여 얻은 최적의 군집 수로 클러스터링, 데이터 전처리 ~ clustering 후 EDA
 
 data:
 1. 복지 (1).csv = 사람인 크롤링 데이터
-2. esg_에너지, 온실.csv = ESG 포털 크롤링, 국가온실가스종합관리시스템의 온실가스 사용량관련 csv 데이터
+2. esg_에너지, 온실.csv = ESG 포털의 ESG데이터와, 국가온실가스종합관리시스템의 온실가스 사용량관련 csv 데이터를 하나로 합친 csv
 
 ![image](https://user-images.githubusercontent.com/77422840/163293893-9b4effce-1e45-4ac6-9548-3ef11cf730db.png)
 
