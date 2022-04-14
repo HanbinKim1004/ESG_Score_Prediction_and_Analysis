@@ -41,6 +41,7 @@ data:
 - 단순 무작위 추출은 overfitting 문제가 발생할 수도 있으나, SMOTE는 알고리즘에 기반해서 데이터를 생성하므로 과적합 발생 가능성이 상대적으로 작음
 
 ![image](https://user-images.githubusercontent.com/77422840/163297245-0c83a988-76ac-488b-ba91-cb8385e63758.png)
+
 모델1 - Unsupervised Learning – K-Prototype Model (군집화 및 해석 목적)
 
 - K-Prototype Clustering은 K-means(수치형 자료, 평균값 사용) + K-modes(범주형 자료, 최빈값 사용)	
@@ -49,14 +50,53 @@ data:
 ![image](https://user-images.githubusercontent.com/77422840/163297419-b0e893d7-da9a-4836-b26f-20eb86fa269f.png)
 
 모델2 - Supervised Learning - Decision Tree, Random Forest, ADA Boost, Light GBM, Gradient Boosting, CAT Boosting, MLP (총 7개 Model)
- 	- 비지도학습 기반의 클러스터링 모델은 기업이 속한 군집의 속성을 바탕으로 ESG 등급을 확률로서 예측함
+ - 비지도학습 기반의 클러스터링 모델은 기업이 속한 군집의 속성을 바탕으로 ESG 등급을 확률로서 예측함
+- 지도학습에 기반한 Classification의 성능의 테스트, Y factor에 가장 큰 영향을 주는 X feature의 탐색을 위함
+- F1 Score을 활용해 성능 평가
+- ESG 등급을 제외한 모델의 지도학습으로 얻은 Label과 실제 Label을 비교하여 예측 성능 평가
+- 변수 중요도 확인으로 가장 많은 영향을 끼치는 Feature의 재무적, 비재무적 요소 판단
 
-	- 지도학습에 기반한 Classification의 성능의 테스트, Y factor에 가장 큰 영향을 주는 X feature의 탐색을 위함
+![image](https://user-images.githubusercontent.com/77422840/163297526-8fc2c5ba-8be6-4e83-b4ad-6090774f8964.png)
 
-	- F1 Score을 활용해 성능 평가
+1. 하이퍼파라미터 설정 
+Elbow Method = 최적의 Cluster의 개수 ‘K’를 찾는 방법
 
-	- ESG 등급을 제외한 모델의 지도학습으로 얻은 Label과 실제 Label을 비교하여 예측 성능 평가
+- 클러스터의 갯수별 SSE를 계산하여, SSE가 가장 ‘급격하게 줄어드는 지점＇이 최적의 K
+- 임의의 군집 수를 정했을 때보다 Clustering이 더 잘 될 것으로 기대함
 
-	- 변수 중요도 확인으로 가장 많은 영향을 끼치는 Feature의 재무적, 비재무적 요소 판단
+2. 하이퍼파라미터의 종류
+Cluster의 개수: n_clusters
+최대 반복 횟수: max_iter
+수치형 변수의 dissimilarity 함수: num_dissim
+범주형 변수의 dissimilarity 함수: cat_dissim
+클러스터당 반복 횟수: n_inint
+가중치: gamma
+Verbosity mode: verbose
+Job의 개수: n_jobs
+
+# Clustering 결과 확인
+![image](https://user-images.githubusercontent.com/77422840/163297626-047814c8-333a-41fe-b22b-6ce3c977e4d7.png)
+![image](https://user-images.githubusercontent.com/77422840/163297640-7a33a217-ff9e-47a8-856e-d4777b389d94.png)
+![image](https://user-images.githubusercontent.com/77422840/163297669-d9a82e34-4ff4-4314-950a-7b6806905959.png)
+![image](https://user-images.githubusercontent.com/77422840/163297684-435e51f8-1dad-4739-bd2b-6a87d65e07ed.png)
+![image](https://user-images.githubusercontent.com/77422840/163297694-50c1c812-a1d0-4140-acdf-3a851abebc0b.png)
+
+# 지도학습 모델 결과 확인 
+![image](https://user-images.githubusercontent.com/77422840/163297726-06678999-7a31-41b1-94b0-e78ef55bce0e.png)
+![image](https://user-images.githubusercontent.com/77422840/163297775-a8569dd0-fb4c-441a-b570-22970c37ff3d.png)
+![image](https://user-images.githubusercontent.com/77422840/163297785-8be629ea-76f3-4237-bbde-c8f859dee2c9.png)
+
+# 결과 해석 
+![image](https://user-images.githubusercontent.com/77422840/163297829-45153558-fc5f-4589-ac75-984dc0f5d1cb.png)
+![image](https://user-images.githubusercontent.com/77422840/163297840-d2c408f6-be0d-4bee-9fe4-1661f4fa3410.png)
+![image](https://user-images.githubusercontent.com/77422840/163297849-4ac08c2d-9558-4b70-b4b9-049a73f7d2db.png)
+
+
+
+
+
+
+
+
 
 
