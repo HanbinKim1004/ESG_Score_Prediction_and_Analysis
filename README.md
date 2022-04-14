@@ -1,4 +1,4 @@
-# ESG Score Prediction of Listed Companies in Korea
+# ESG Score Prediction and Analysis of Listed Companies in Korea
 ##  22-1_DSL_Modeling_Clustering_Algorithm
 
 Collaborators : 강현우, 김종민, 김채은, 김한빈, 김형민, 황다연
