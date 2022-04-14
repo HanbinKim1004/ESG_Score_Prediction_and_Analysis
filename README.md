@@ -41,9 +41,10 @@ data:
 
 - 상장 기업 중에서도 ESG 등급이 산정되지 않은 기업이 존재
 
-![image](https://user-images.githubusercontent.com/77422840/163296923-7e9ff8de-0174-4bd8-9b3b-4070fa394fc5.png)
 
 # 데이터 전처리
+![image](https://user-images.githubusercontent.com/77422840/163296923-7e9ff8de-0174-4bd8-9b3b-4070fa394fc5.png)
+
 데이터 전처리1.  Label Encoding (Ordinal Encoding)
 - 각 문자열 라벨을 단순 정수화 (A -> 0, B -> 1, C -> 2…)
 - Decision Tree 모델에 적합하며, 특히 GBDT 모델에서는 기본적인 방법
