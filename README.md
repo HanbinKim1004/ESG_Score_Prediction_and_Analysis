@@ -10,6 +10,7 @@ code:
 
 data:
 1. 복지 (1).csv = 사람인 크롤링 데이터
+2. esg_에너지, 온실.csv = ESG 포털 크롤링, 국가온실가스종합관리시스템의 온실가스 사용량관련 csv 데이터
 
 ![image](https://user-images.githubusercontent.com/77422840/163293893-9b4effce-1e45-4ac6-9548-3ef11cf730db.png)
 
