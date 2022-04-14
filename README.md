@@ -16,11 +16,11 @@ code:
 data:
 1. 복지 (1).csv = 사람인 크롤링 데이터
 2. esg_에너지, 온실.csv = ESG 포털의 ESG데이터와, 국가온실가스종합관리시스템의 온실가스 사용량관련 csv 데이터를 하나로 합친 csv
-3. 6th_merged_data.csv
-4. 전처리완료_merged_6.csv
-5. 모델대입용ESGNull기업데이터.csv
-6. 모델학습용ESG_NonNull기업데이터
-7. (최종)ADASYN_ESG예측데이터.csv
+3. 6th_merged_data.csv = 외부 확보 데이터 결합 데이터 (초안)
+4. 전처리완료_merged_6.csv = 6th_merged_data 전처리 완료 데이터
+5. 모델대입용ESGNull기업데이터.csv = (모델 학습용)ESG 점수가 없는 상장기업 데이터
+6. 모델학습용ESG_NonNull기업데이터 = (모델 대입용)ESG 점수가 없는 상장기업 데이터
+7. (최종)ADASYN_ESG예측데이터.csv = ADASYN 오버샘플링을 수행한 ESG 예측 데이터
 
 
 
