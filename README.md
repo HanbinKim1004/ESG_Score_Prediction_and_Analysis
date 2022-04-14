@@ -1,6 +1,7 @@
 # 22-1_DSL_Modeling_Clustering_Algorithm
 
 file definition
+
 code:
 1. saramin_crawling = 사람인 크롤링 데이터 
 2. clusteringrepeat = oversampling clustering / cluster 속 clusterting
