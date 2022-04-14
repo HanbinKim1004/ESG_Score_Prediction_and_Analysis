@@ -68,10 +68,10 @@ data:
 - K-Prototype Clustering은 K-means(수치형 자료, 평균값 사용) + K-modes(범주형 자료, 최빈값 사용)	
 - 두 모델을 동시에 사용함으로써, 범주형 자료의 변환없이 클러스터링이 가능한 알고리즘
 
-![image](https://user-images.githubusercontent.com/77422840/163297419-b0e893d7-da9a-4836-b26f-20eb86fa269f.png)
-
 
 ## Supervised Learning
+![image](https://user-images.githubusercontent.com/77422840/163297419-b0e893d7-da9a-4836-b26f-20eb86fa269f.png)
+
 모델2 - Supervised Learning - Decision Tree, Random Forest, ADA Boost, Light GBM, Gradient Boosting, CAT Boosting, MLP (총 7개 Model)
  - 비지도학습 기반의 클러스터링 모델은 기업이 속한 군집의 속성을 바탕으로 ESG 등급을 확률로서 예측함
 - 지도학습에 기반한 Classification의 성능의 테스트, Y factor에 가장 큰 영향을 주는 X feature의 탐색을 위함
@@ -79,6 +79,7 @@ data:
 - ESG 등급을 제외한 모델의 지도학습으로 얻은 Label과 실제 Label을 비교하여 예측 성능 평가
 - 변수 중요도 확인으로 가장 많은 영향을 끼치는 Feature의 재무적, 비재무적 요소 판단
 
+## 하이퍼 파라미터 설정
 ![image](https://user-images.githubusercontent.com/77422840/163297526-8fc2c5ba-8be6-4e83-b4ad-6090774f8964.png)
 
 1. 하이퍼파라미터 설정 
